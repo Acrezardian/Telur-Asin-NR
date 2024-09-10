@@ -1,0 +1,386 @@
+/* General Style */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Navbar */
+nav {
+    background-color: #7e57c2;
+    padding: 5px 0;
+}
+
+nav .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Headline Section */
+header {
+    background-color: #d1c4e9;
+    color: #fff;
+    padding: 80px 20px; /* Adjusted padding for better spacing */
+    text-align: center;
+    background-image: linear-gradient(135deg, #ab47bc 0%, #d1c4e9 100%);
+    border-radius: 0 0 50% 50% / 0 0 100px 100px;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+header p {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+/* Product Section */
+.product-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 60px 20px; /* Adjusted padding for better spacing */
+    background-color: #fff;
+    border-radius: 50px 50px 0 0;
+}
+
+.product-section img {
+    width: 30%; /* Adjusted width to make the image smaller */
+    max-width: 300px; /* Optional: Set a maximum width for the image */
+    height: auto;
+    border-radius: 12px;
+}
+
+.product-description {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.product-description h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.product-description p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #7e57c2;
+    color: #fff;
+    padding: 60px 20px; /* Adjusted padding for better spacing */
+    text-align: center;
+    position: relative;
+}
+
+.testimonials h3 {
+    margin-top: 10px;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+/* Container for grid layout */
+.testimonials-container {
+    display: flex;
+    flex-direction: column; /* Stack testimonials vertically */
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Grid layout for testimonials */
+.testimonials-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; /* Space between grid items */
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    width: 100%; /* Full width of the container */
+}
+
+/* Each testimonial card */
+.testimonial {
+    background-color: #fff;
+    color: #333;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: scale(1.03);
+}
+
+.testimonial p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.testimonial span {
+    font-style: italic;
+    color: #7e57c2;
+    display: block;
+    text-align: right;
+}
+
+/* CTA Section */
+.cta {
+    text-align: center;
+    padding: 60px 20px; /* Adjusted padding for better spacing */
+    background-color: #d1c4e9;
+    background-image: linear-gradient(135deg, #ab47bc 0%, #d1c4e9 100%);
+}
+
+.cta h2 {
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.cta button {
+    background-color: #7e57c2;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    font-size: 1.3em;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.cta button:hover {
+    background-color: #5e35b1;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    transform: scale(1.03);
+}
+
+/* Advantages Section */
+.advantages {
+    padding: 60px 20px; /* Adjusted padding for better spacing */
+    background-color: #f3e5f5;
+    text-align: center;
+}
+
+.advantages h4 {
+    margin-top: 10px;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.advantages ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+}
+
+.advantages ul li {
+    margin: 10px 0;
+    font-size: 1.3em;
+    display: flex;
+    align-items: center;
+}
+
+.advantages ul li::before {
+    content: '✔️';
+    margin-right: 10px;
+    color: #7e57c2;
+}
+
+/* Contact Form Section */
+.contact-form {
+    padding: 60px 20px; /* Adjusted padding for better spacing */
+    background-color: #fff;
+}
+
+.contact-form h4 {
+
+    margin-top: 10px;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form input, .contact-form textarea {
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 1.1em;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form button {
+    background-color: #7e57c2;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #5e35b1;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* FAQ Section */
+.faq {
+    padding: 60px 20px; /* Adjusted padding for better spacing */
+    background-color: #f3e5f5;
+    text-align: center;
+}
+
+.faq h4 {
+
+    margin-top: 10px;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.faq ul {
+    list-style: none;
+    padding: 0;
+}
+
+.faq ul li {
+    margin: 20px 0;
+    font-size: 1.2em;
+    text-align: left;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Footer */
+footer {
+    background-color: #7e57c2;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1em;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .product-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .product-description {
+        text-align: center;
+    }
+}
+
+.gallery {
+    padding: 50px 0;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.gallery h4 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center; /* Mengatur item ke tengah secara horizontal */
+    align-items: center; /* Mengatur item ke tengah secara vertikal */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Mengatur kontainer untuk berada di tengah secara horizontal */
+}
+
+.gallery-item {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Mengatur item ke tengah secara horizontal dalam item */
+    justify-content: center; /* Mengatur item ke tengah secara vertikal dalam item */
+}
+
+.gallery-item img {
+    width: 50%; /* Adjusted width to make the image smaller */
+    max-width: 300px; /* Optional: Set a maximum width for the image */
+    height: auto;
+    border-radius: 12px;
+}
+
+.gallery-item h5 {
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+.gallery-item p {
+    font-size: 1em;
+    color: #666;
+}
+

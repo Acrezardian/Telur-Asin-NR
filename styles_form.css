@@ -1,0 +1,101 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: linear-gradient(to right, #ffffff, #f0f8ff);
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ddd;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+    font-size: 1.1em;
+}
+
+input, select, textarea {
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+    background-color: #fafafa;
+    transition: border-color 0.3s;
+}
+
+input, select, textarea {
+    margin-bottom: 20px; /* Pastikan jarak antar elemen */
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+    background-color: #fafafa;
+    transition: border-color 0.3s;
+}
+
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #5cb85c;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 20px; /* Tambahkan jarak */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+
+button:hover {
+    background-color: #4cae4c;
+    transform: translateY(-2px);
+}
+
+
+.payment-info {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+}
+
+.payment-info input {
+    margin-bottom: 12px;
+}
+
+.show-payment-info {
+    margin-top: 20px;
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.show-payment-info:hover {
+    color: #0056b3;
+}

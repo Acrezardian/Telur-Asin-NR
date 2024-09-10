@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Telur Asin NR</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#headline">Beranda</a></li>
+                <li><a href="#product">Produk</a></li>
+                <li><a href="#advantages">Keunggulan</a></li>
+                <li><a href="#testimonials">Testimonial</a></li>
+                <li><a href="#contact">Kontak</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#cta">Beli Sekarang</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <!-- Headline -->
+    <header id="headline">
+        <div class="container">
+            <h1>NR - Telur Asin Premium</h1>
+            <p>Telur Asin berkualitas tinggi dengan rasa khas yang tiada duanya.</p>
+        </div>
+    </header>
+
+    <!-- Product Image and Description -->
+    <section class="product-section container">
+        <img src="assets/image/produk.jpg" alt="Telur Asin NR">
+        <div class="product-description">
+            <h2>Telur Asin NR</h2>
+            <p>Telur Asin NR dibuat dari telur bebek pilihan dan diproses secara higienis untuk menjamin rasa lezat dan keawetan yang maksimal. Nikmati setiap gigitan dengan tekstur kuning telur yang lembut dan gurih.</p>
+        </div>
+    </section>
+
+<!-- Product Gallery -->
+<section id="product" class="gallery">
+    <h4>Galeri Produk</h4>
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="assets/image/telurbakar.jpg" alt="Produk 1">
+            <h5>Telur Asin Bakar</h5>
+            <p>Telur asin bakar adalah telur asin yang dipanggang setelah pengasinan, menghasilkan rasa gurih dengan aroma khas asap.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="assets/image/telurrebus.jpg" alt="Produk 2">
+            <h5>Telur Asin Rebus</h5>
+            <p>Telur asin rebus adalah telur yang diasinkan lalu direbus hingga matang dengan rasa gurih dan tekstur padat.</p>
+        </div>
+        <!-- Tambahkan lebih banyak item sesuai kebutuhan -->
+    </div>
+</section>
+
+
+    <!-- Advantages -->
+    <section id="advantages" class="advantages">
+        <h4>Keunggulan Produk Kami</h4>
+        <ul>
+            <li>Diproses secara higienis</li>
+            <li>Rasa gurih yang khas</li>
+            <li>Keawetan produk yang lama</li>
+            <li>Telur bebek berkualitas tinggi</li>
+        </ul>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials">
+        <h3>Apa Kata Pelanggan Kami?</h3>
+        <div class="testimonials-container">
+            <ul class="testimonials-list">
+                <!-- Testimonials -->
+                <li class="testimonial">
+                    <p>"Telur asin NR adalah pilihan utama saya untuk camilan!"</p>
+                    <span>- Anton, Yogyakarta</span>
+                </li>
+                <li class="testimonial">
+                    <p>"Telur asin NR benar-benar lezat, kualitasnya luar biasa dan rasanya sangat otentik!"</p>
+                    <span>- Andi, Jakarta</span>
+                </li>
+                <li class="testimonial">
+                    <p>"Saya sangat puas dengan telur asin NR, rasanya enak dan awet!"</p>
+                    <span>- Budi, Bandung</span>
+                </li>
+                <li class="testimonial">
+                    <p>"Telur asin terbaik yang pernah saya coba!"</p>
+                    <span>- Siti, Surabaya</span>
+                </li>
+                <li class="testimonial">
+                    <p>"Kualitas dan rasa yang konsisten membuat saya terus kembali membeli!"</p>
+                    <span>- Rudi, Bali</span>
+                </li>
+                <li class="testimonial">
+                    <p>"Saya merekomendasikan telur asin NR kepada semua teman saya!"</p>
+                    <span>- Lita, Medan</span>
+                </li>
+                <li class="testimonial">
+                    <p>"Produk berkualitas tinggi dengan rasa yang luar biasa!"</p>
+                    <span>- Joko, Semarang</span>
+                </li>
+                <li class="testimonial">
+                    <p>"Telur asin yang enak dengan harga yang sangat terjangkau!"</p>
+                    <span>- Dina, Makassar</span>
+                </li>
+                <li class="testimonial">
+                    <p>"Sangat puas dengan pelayanan dan kualitas produk NR!"</p>
+                    <span>- Iwan, Palembang</span>
+                </li>
+                <li class="testimonial">
+                    <p>"Rasa telur asin NR sangat berbeda dan lebih enak dibandingkan yang lain!"</p>
+                    <span>- Nia, Pontianak</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+       
+    </section>
+
+        <!-- Call to Action -->
+        <section id="cta" class="cta">
+        <h2>Ingin Mencoba Telur Asin NR?</h2>
+        <a href="payment_form.php"><button>Beli Sekarang</button></a>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq">
+        <h4>FAQ</h4>
+        <ul>
+            <li><strong>Q:</strong> Bagaimana cara penyimpanan telur asin NR?<br><strong>A:</strong> Simpan di tempat sejuk dan kering untuk menjaga kualitas.</li>
+            <li><strong>Q:</strong> Apakah ada garansi kepuasan?<br><strong>A:</strong> Kami menyediakan pengembalian barang jika produk rusak saat pengiriman.</li>
+        </ul>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 NR Telur Asin - Semua Hak Dilindungi</p>
+    </footer>
+
+    <script src="assets/scripts.js"></script>
+</body>
+</html>
+
+<!-- ttps://api.whatsapp.com/send?phone=6285174401311&text=Hallo%2C%20saya%20ingin%20bertanya%20tentang%20produknya! -->
