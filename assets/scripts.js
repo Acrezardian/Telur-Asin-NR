@@ -49,6 +49,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Set initial position
     slider.style.transform = `translateX(-${index * slideWidth}px)`;
     updateButtons();
-    
+
 });
 
