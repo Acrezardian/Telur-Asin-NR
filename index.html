@@ -9,22 +9,30 @@
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#headline">Beranda</a></li>
-                <li><a href="#product">Produk</a></li>
-                <li><a href="#advantages">Keunggulan</a></li>
-                <li><a href="#testimonials">Testimonial</a></li>
-                <li><a href="#contact">Kontak</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#cta">Beli Sekarang</a></li>
-            </ul>
-        </div>
-    </nav>
+  <!-- Navbar -->
+<nav>
+    <div class="container">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul>
+            <li><a href="#headline">Beranda</a></li>
+            <li><a href="#product">Produk</a></li>
+            <li><a href="#advantages">Keunggulan</a></li>
+            <li><a href="#testimonials">Testimonial</a></li>
+            <li><a href="#contact">Kontak</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#cta">Beli Sekarang</a></li>
+        </ul>
+    </div>
+</nav>
 
-    
+
+<script>
+    function toggleMenu() {
+        const menu = document.querySelector('nav ul');
+        menu.classList.toggle('active');
+    }
+</script>
+
     <!-- Headline -->
     <header id="headline">
         <div class="container">
@@ -128,7 +136,7 @@
         <!-- Call to Action -->
         <section id="cta" class="cta">
         <h2>Ingin Mencoba Telur Asin NR?</h2>
-        <a href="payment_form.php"><button>Beli Sekarang</button></a>
+        <a href="payment_form.html"><button>Beli Sekarang</button></a>
     </section>
 
     <!-- FAQ -->
