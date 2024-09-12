@@ -3,7 +3,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    line-height: 1.4;
     background-color: #f5f5f5;
     color: #333;
 }
@@ -11,25 +11,43 @@ body {
 /* Navbar */
 nav {
     background-color: #7e57c2;
-    padding: 5px 0;
+    padding: 10px 0;
+    position: relative; /* Ensure it is positioned relative for absolute positioning of menu */
 }
 
 nav .container {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center;
+    padding: 0 10px;
 }
 
+/* Navbar Links */
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end; /* Align items to the right */
+    transition: max-height 0.3s ease;
 }
 
+/* Hide menu toggle button by default */
+.menu-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2em;
+    cursor: pointer;
+    display: none; /* Hide the button by default */
+}
+
+/* Navbar Links Style */
 nav ul li {
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 nav ul li a {
@@ -37,11 +55,46 @@ nav ul li a {
     text-decoration: none;
     font-size: 1em;
     font-weight: 600;
+    display: block;
+    padding: 10px 15px; /* Add some padding for better clickable area */
 }
 
 nav ul li a:hover {
     text-decoration: underline;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    nav .container {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: flex-end; /* Align items to the right on small screens */
+    }
+
+    nav ul {
+        display: block; /* Display block to allow max-height to be toggled */
+        max-height: 0;
+        overflow: hidden; /* Hide overflowing content */
+        width: 100%; /* Full width for the dropdown menu */
+        text-align: right; /* Align text to the right */
+        background-color: #7e57c2; /* Background color for the dropdown menu */
+        padding: 0; /* Remove default padding */
+    }
+
+    nav ul.active {
+        max-height: 500px; /* Adjust this value as needed */
+        padding: 10px 0; /* Add padding for dropdown */
+    }
+
+    .menu-toggle {
+        display: block; /* Show the button on small screens */
+        margin-bottom: 10px; /* Space between button and menu */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adjust margin for better spacing on small screens */
+    }
+}
+
 
 /* Container */
 .container {
@@ -281,31 +334,34 @@ header p {
 
 /* FAQ Section */
 .faq {
-    padding: 60px 20px; /* Adjusted padding for better spacing */
+    padding: 10px 20px; /* Adjusted padding for better spacing */
     background-color: #f3e5f5;
     text-align: center;
 }
 
 .faq h4 {
-
     margin-top: 10px;
     font-size: 2.5em;
     margin-bottom: 20px;
-    text-align: center;
 }
 
 .faq ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align list items */
 }
 
 .faq ul li {
-    margin: 20px 0;
-    font-size: 1.2em;
-    text-align: left;
+    margin: 10px 0; /* Adjusted margin for better spacing */
+    font-size: 1em;
+    text-align: center; /* Center align text */
     max-width: 800px;
-    margin: 20px auto;
+    width: 100%; /* Full width to ensure consistency */
 }
+
 
 /* Footer */
 footer {
@@ -333,15 +389,15 @@ footer p {
 }
 
 .gallery {
-    padding: 50px 0;
+    padding: 50px;
     background-color: #f5f5f5;
     text-align: center;
 }
 
 .gallery h4 {
     font-size: 2.5em;
-    margin-bottom: 30px;
-    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-top: 5px;
 }
 
 .gallery-container {
